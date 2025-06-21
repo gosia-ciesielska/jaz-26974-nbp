@@ -28,9 +28,9 @@ public class RequestController {
             @ApiResponse(responseCode = "200", description = "Rate successfully retrieved",
                     content = {@Content(mediaType = "application/json",
                             array = @ArraySchema(schema = @Schema(implementation = Request.class)))}),
-            @ApiResponse(responseCode = "400",
+            @ApiResponse(responseCode = "400", description = "Invalid request data",
                     content = @Content),
-            @ApiResponse(responseCode = "404",
+            @ApiResponse(responseCode = "404", description = "Rates for given data not found",
                     content = @Content)
     })
     @Tag(name = "Get mean rate")
