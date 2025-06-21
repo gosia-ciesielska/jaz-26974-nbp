@@ -2,12 +2,12 @@ package pl.pjatk.jaz_26974_nbp.model;
 
 import java.math.BigDecimal;
 
-public class Rate {
+public class NBPRate {
     private String no;
     private String effectiveDate;
     private BigDecimal mid;
 
-    public Rate() {
+    public NBPRate() {
     }
 
     public String getNo() {
